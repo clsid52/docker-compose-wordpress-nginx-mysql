@@ -12,3 +12,10 @@ and set's with this info:
 MYSQL_ROOT_PASSWORD=your_root_password
 MYSQL_USER=your_wordpress_database_user
 MYSQL_PASSWORD=your_wordpress_database_password
+
+ Ubuntu 24.10 with docker repo is:
+
+Docker version 27.4.1
+docker-compose version 1.29.2
+
+so that you can understand the version '3.9' there is in the docker-compose file
