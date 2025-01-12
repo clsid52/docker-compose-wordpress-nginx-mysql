@@ -31,6 +31,7 @@ services:
       - ./scripts/install-wp-plugins_and_themes.sh:/usr/local/etc/php/conf.d/install-wp-plugins_and_themes.sh
       - wordpress:/var/www/html
     entrypoint: "/bin/sh -c /usr/local/etc/php/conf.d/install-wp-plugins_and_themes.sh'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'" ** to validate this command
+    command: "/bin/sh -c 'while :; do sleep 24h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'" ** to validate this command also
     networks:
       - app-network
 
