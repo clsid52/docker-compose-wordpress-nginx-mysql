@@ -18,3 +18,4 @@ Add a bash script to run after WP is installer to add some themes and plugins in
 - ./themes/2.zip:/var/www/html/wp-content/themes/2.zip
 
 in Docker-compose file
+!!!!! ATENTION this is still a working progress so ... dont clone yet .... problably will not run correctly
