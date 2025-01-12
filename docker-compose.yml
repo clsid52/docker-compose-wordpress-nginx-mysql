@@ -28,6 +28,7 @@ services:
       - WORDPRESS_DB_NAME=wordpress
     volumes:
       - ./php-conf/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+      - ./plugins/1.zip:/var/www/html/wp-content/1.zip
       - wordpress:/var/www/html
     networks:
       - app-network
