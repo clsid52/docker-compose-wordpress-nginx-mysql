@@ -30,7 +30,7 @@ services:
       - ./php-conf/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
       - ./scripts/install-wp-plugins_and_themes.sh:/usr/local/etc/php/conf.d/install-wp-plugins_and_themes.sh
       - wordpress:/var/www/html
-    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'" ** to validate this command
+    entrypoint: "/bin/sh -c /usr/local/etc/php/conf.d/install-wp-plugins_and_themes.sh'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'" ** to validate this command
     networks:
       - app-network
 
