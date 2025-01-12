@@ -11,4 +11,10 @@ docker-compose version 1.29.2
 
 so that you can understand the version '3.9' there is in the docker-compose file
 
-Also I add a script to add a theme and some needed plugins in WP
+To DO:
+Add a bash script to run after WP is installer to add some themes and plugins in WP and stop using this:
+
+- ./plugins/1.zip:/var/www/html/wp-content/plugins/1.zip
+- ./themes/2.zip:/var/www/html/wp-content/themes/2.zip
+
+in Docker-compose file
