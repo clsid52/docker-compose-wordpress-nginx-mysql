@@ -1,0 +1,1 @@
+install-dns-plugins.sh
